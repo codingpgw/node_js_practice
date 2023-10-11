@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/public/main.css">
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class="grey-bg">
     <%- include('nav.html') %>
     <!-- <% for (var i = 0; i < posts.length; i++){%>
 
@@ -28,6 +28,7 @@
           <a href="detail/<%= posts[i]._id %>.ejs"><h4> 할일 제목 : <%= posts[i].제목 %> </h4></a> 
           <p> 할일 마감날짜 : <%= posts[i].날짜 %> </p>
           <button class="delete" data-id="<%= posts[i]._id %>">삭제</button>
+          <button class="edit" data-id="<%= posts[i]._id %>">수정</button>
         </li>
         <% } %>
       </ul>
